@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #ddfaff;
+  color: #5a5f60;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -53,7 +53,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #5a5f60;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -149,7 +149,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #5a5f60;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -163,7 +163,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: #cccece;
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -183,7 +183,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #5a5f60;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -194,7 +194,7 @@ hr {
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
+      background: #5a5f60;
       color: #f9f6f2; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
@@ -220,7 +220,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: #939c9e; }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -318,77 +318,83 @@ hr {
   -webkit-transition: 100ms ease-in-out;
   -moz-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
+  color: #f7faff;  /* white */
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #eee4da;
+    background: #9bc0ff;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #595959; /*#eee4da;*/
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #bfd7ff;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
+    color: #1d2738; /* black */
+  }
   .tile.tile-4 .tile-inner {
-    background: #3090e5; /*#ede0c8;*/
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #9bc0ff;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
+    color: #1d2738; /* black */
+  }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #5d6f8c; /*#f2b179;*/ }
+    background: #82b0ff;
+    color: #1d2738; /* black */
+  }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #8b99af; /*#f59563;*/ }
+    background: #1babc4;
+    color: #1d2738; /* black */
+  }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #17979e /*#f67c5f;*/ }
+    background: #3d85ff;
+    color: #1d2738; /* black */
+  }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    background: #00c3ff; 
+    color: #1d2738; /* black */
+  }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
+    background: #007bff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
+    background: #001dff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
+    background: #7f00ff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
+    background: #c700ff;
+    color: #1d2738; /* black */
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
+    background: #ff00c3;
+    color: #1d2738; /* black */
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+    background: #ff0000;
+    color: #3c3a32;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -519,7 +525,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #5a5f60;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -582,7 +588,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #5a5f60;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -596,7 +602,7 @@ hr {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(238, 228, 218, 0.5);
+      background: #5a5f60;
       z-index: 100;
       text-align: center;
       -webkit-animation: fade-in 800ms ease 1200ms;
@@ -616,7 +622,7 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #5a5f60;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
